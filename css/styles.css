@@ -388,15 +388,12 @@ width: 1200px;
 }
 
 .portfolio-card {
-    border: 1px solid #eee;
     max-width: 370px;
-}
-.portfolio-card:not(:nth-child(3n)) {
-    margin-right: 30px;
+    margin-bottom: 30px;
 }
 
-.work-pic {
-    padding-bottom: 20px;
+.portfolio-card:not(:nth-child(3n)) {
+    margin-right: 30px;
 }
 
 .works-list {
@@ -409,11 +406,16 @@ width: 1200px;
     margin: 0px;
     font-size: 16px;
     line-height: 1.85;
-    padding-bottom: 20px;
+    text-align: left;
 }
 
 .works-title .uppercase {
     text-transform: uppercase;
+}
+
+.card-description {
+border: 1px solid #eee;
+padding: 20px 24px;
 }
 
 .filter-list {
@@ -429,6 +431,7 @@ width: 1200px;
     line-height: 2;
     margin: 0;
     padding-bottom: 4px;
+    text-align: left;
 }
 
 
