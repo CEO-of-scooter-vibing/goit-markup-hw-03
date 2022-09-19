@@ -56,6 +56,8 @@ body {
     margin: 0 auto;
 }
 
+/*STUDIO*/
+
 /* header */
 
 .header-studio {
@@ -134,7 +136,26 @@ margin-left: auto;
         padding-left: 0;
 }
 
-/* body */
+.site-nav .link {
+    color: var(--primary-title-color-black);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.link.current {
+    color: var(--primary-accent-color-blue);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--primary-accent-color-blue);
+}
+
+.contacts .link {
+    color: var(--primary-text-color-grey);
+}
+
+/* hero */
 
 .hero-title,
 .hero-button,
@@ -186,6 +207,9 @@ max-width: 696px;
     background-color: #188CE8;
 }
 
+
+/*features*/
+
 .features {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -234,6 +258,8 @@ max-width: 696px;
     line-height: 1.18;
 }
 
+/*services*/
+
 .services {
     padding-bottom: 94px;
 }
@@ -251,10 +277,14 @@ max-width: 696px;
     margin-bottom: 50px;
 }
 
+/*team*/
+
 .team {
     padding-top: 94px;
     padding-bottom: 94px;
     text-align: center;
+
+    background-color: #F5F4FA;
 }
 
 .team .section-list {
@@ -288,41 +318,12 @@ max-width: 696px;
     padding-bottom: 30px;
 }
 
-.team {
-    background-color: #F5F4FA;
-}
-
 .team .list-item {
     background-color: var(--secondary-accent-color-white);
     max-width: 270px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
-
-.site-nav .link {
-    color: var(--primary-title-color-black);
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.link.current {
-    color: var(--primary-accent-color-blue);
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-    color: var(--primary-accent-color-blue);
-}
-
-.contacts .link {
-    color: var(--primary-text-color-grey);
-}
-
-/* hero */
-
-
-
-/* sections */
 
 .section-title,
 .list-title {
@@ -332,7 +333,6 @@ max-width: 696px;
 .section-passage {
     color: var(--primary-text-color-grey);
 }
-
 
 /* footer */
 
@@ -356,12 +356,12 @@ max-width: 696px;
 
 
 /* PORTFOLIO */
+/* header is the same as in studio */
 
 .section.filter {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-
 
 .filter-button {
     color: var(--primary-title-color-black);
@@ -383,6 +383,11 @@ max-width: 696px;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    font-family: inherit;
 }
 
 .filter .item:not(:last-child) {
@@ -426,13 +431,6 @@ border-top: none;
 padding: 20px 24px;
 }
 
-.filter-list {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    font-family: inherit;
-}
-
 .works-title {
     font-weight: 700;
     font-size: 18px;
@@ -463,7 +461,6 @@ padding: 20px 24px;
 .logo-wrap.secondary {
     color: var(--secondary-accent-color-white);
 }
-
 
 .physical-address:hover,
 .physical-address:focus {
